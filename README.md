@@ -59,8 +59,11 @@ climate_change_df = pd.read_csv("C:/Users/User/Downloads/climate_change.csv")
 
 climate_change_df.head()
 
-
 ```
+
+<img width="324" alt="data loading" src="https://github.com/user-attachments/assets/60a36f6b-2c70-45cb-a857-6ab6eb033a74" />
+
+
 
 ###  Data Analysis
 
@@ -77,6 +80,9 @@ climate_change_df.head()
 
 ```
 
+<img width="274" alt="conversion to time series" src="https://github.com/user-attachments/assets/1e8ec2a0-cb91-4354-bb0d-6b88242c044e" />
+
+
 ###  Data Inspection(check for missing values)
 
 ```python
@@ -85,6 +91,7 @@ climate_change_df.head()
 climate_change_df.isna().any()
 
 ```
+<img width="248" alt="check for missing values" src="https://github.com/user-attachments/assets/a89e3148-c046-4d94-911d-6226d353f2f4" />
 
 
 ```python
@@ -92,6 +99,9 @@ climate_change_df.isna().any()
 climate_change_df.isna().sum()
 
 ```
+
+
+<img width="205" alt="counting number of missing values" src="https://github.com/user-attachments/assets/246037ff-2a45-4f43-8281-79a7cf12f639" />
 
 ### Data Cleaning (handling missing values) 
 
@@ -106,6 +116,9 @@ climate_change_df["co2"].mean()
 
 ```
 
+<img width="242" alt="mean value" src="https://github.com/user-attachments/assets/b06a6856-23de-4e8f-b1b1-8f8dbe8faeb3" />
+
+
 ```python
 # Filling the missing values with the mean value 352.32 on the co2 column 
 
@@ -115,12 +128,18 @@ climate_change_df.head()
 
 ```
 
+<img width="577" alt="filling missing values" src="https://github.com/user-attachments/assets/040771c4-31cb-4f6e-aeee-a86b92c30cf8" />
+
+
 ```python
 # to confirm that there are no more missing values 
 
 climate_change_df.isna().any()
 
 ```
+
+
+<img width="421" alt="confirmation of no missing values" src="https://github.com/user-attachments/assets/d449daaa-bf78-4d33-af97-9a7bcc2d853d" />
 
 ### Data Visualization
 
@@ -150,6 +169,10 @@ fig.suptitle("The Atmospheric Co2 Emission Trends (1958–2016) ")
 plt.show()
 
 ```
+
+<img width="491" alt="data viz" src="https://github.com/user-attachments/assets/e92e0d4c-dbe1-44b6-b742-4a3ed87adb13" />
+
+
 
 ###  Data Interpretation
 - The data visualization above shows that there is a overall steady increase of co2 emission from 1958 to 2016.
